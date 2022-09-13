@@ -1,5 +1,5 @@
 function NewGuidePage() {
-    return <div>All Guides Page</div>
+    return <div>New Guides Page</div>
 }
 
 export default NewGuidePage;

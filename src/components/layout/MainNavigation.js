@@ -8,6 +8,15 @@ function MainNavigation() {
         <ul>
           <li>
             <Link to='/'>All Guides</Link>
+
+          </li>
+          <li>
+            <Link to='/new-guide'>New Guides</Link>
+            
+          </li>
+          <li>
+            <Link to='favorite-guides'>Favorite Guides</Link>
+            
           </li>
         </ul>
       </nav>
