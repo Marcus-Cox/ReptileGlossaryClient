@@ -4,12 +4,12 @@ import React, { Fragment } from "react";
 import AllGuidesPage from "./pages/AllGuides";
 import FavoriteGuidesPage from "./pages/FavoriteGuides";
 import NewGuidePage from "./pages/NewGuide";
-import MainNavigation from "./components/layout/MainNavigation";
+import Layout from "./components/layout/Layout";
 function App() {
   //localhost:3000/pathname / is default
   return (
-    <div>
-      <MainNavigation />
+    <Layout>
+
         <Fragment>
           <Routes>
             
@@ -27,7 +27,7 @@ function App() {
           </Routes>
         </Fragment>
       
-    </div>
+    </Layout>
   );
 }
 export default App;
