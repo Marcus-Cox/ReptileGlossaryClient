@@ -1,7 +1,9 @@
+import Card from '../ui/Card'
 import classes from './ReptileGuideItem.module.css'
 
 function ReptileGuideItem(props) {
     return <li className={classes.item}>
+        <Card>
         <div className={classes.image}>
             <img src={props.image} alt={props.title} />
         </div>
@@ -16,6 +18,7 @@ function ReptileGuideItem(props) {
         <div className={classes.actions}>
         <button>To Favorites</button>
         </div>
+        </Card>
     </li>
 }
 
