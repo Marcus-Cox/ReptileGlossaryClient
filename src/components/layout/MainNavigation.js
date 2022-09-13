@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
+import React from "react";
+
+import classes from "./MainNavigation.module.css";
 
 function MainNavigation() {
   return (
-    <header>
-      <div> Reptile Guides</div>
+    <header className={classes.header}>
+      <div className={classes.logo}> Reptile Guides</div>
       <nav>
         <ul>
           <li>
-            <Link to='/'>All Guides</Link>
-
+            <Link to="/">All Guides</Link>
           </li>
           <li>
-            <Link to='/new-guide'>New Guides</Link>
-            
+            <Link to="/new-guide">New Guides</Link>
           </li>
           <li>
-            <Link to='favorite-guides'>Favorite Guides</Link>
-            
+            <Link to="favorite-guides">Favorite Guides</Link>
           </li>
         </ul>
       </nav>
