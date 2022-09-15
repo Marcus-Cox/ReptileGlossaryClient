@@ -2,7 +2,7 @@ import { useRef } from "react";
 import CardComponent from "../ui/CardComponent";
 import classes from "./NewReptileGuideForm.module.css";
 
-function NewReptileGuideForm() {
+function NewReptileGuideForm(props) {
   const titleInputRef = useRef();
   const reptileInputRef = useRef();
   const imageInputRef = useRef();
@@ -25,7 +25,7 @@ function NewReptileGuideForm() {
       description: enteredDescription,
       content: enteredContent,
     };
-    console.log(reptileGuideData);
+    props.onAddReptileGuide(reptileGuideData)
   }
   return (
     <CardComponent>
