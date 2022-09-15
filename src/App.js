@@ -5,6 +5,7 @@ import AllGuidesPage from "./pages/AllGuides";
 import FavoriteGuidesPage from "./pages/FavoriteGuides";
 import NewGuidePage from "./pages/NewGuide";
 import Layout from "./components/layout/Layout";
+
 function App() {
   //localhost:3000/pathname / is default
   return (

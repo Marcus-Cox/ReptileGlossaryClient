@@ -1,9 +1,9 @@
-import Card from '../ui/Card'
+import CardComponent from '../ui/CardComponent'
 import classes from './ReptileGuideItem.module.css'
 
 function ReptileGuideItem(props) {
     return <li className={classes.item}>
-        <Card>
+        <CardComponent>
         <div className={classes.image}>
             <img src={props.image} alt={props.title} />
         </div>
@@ -11,6 +11,7 @@ function ReptileGuideItem(props) {
         <div className={classes.content}>
             <h3>{props.title}</h3>
             <h1>{props.writer}</h1>
+            <p>{props.reptile}</p>
             <h2>{props.description}</h2>
             <p>{props.content}</p>
             <p>{props.publishing_date}</p>
@@ -18,7 +19,7 @@ function ReptileGuideItem(props) {
         <div className={classes.actions}>
         <button>To Favorites</button>
         </div>
-        </Card>
+        </CardComponent>
     </li>
 }
 
