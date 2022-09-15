@@ -1,6 +1,6 @@
 import NewReptileGuideForm from "../components/guides/NewReptileGuideForm";
 
-function NewGuidePage() {
+function NewReptileGuidePage() {
   return (
     <section>
       <h1>Add New Guide</h1>
@@ -9,4 +9,4 @@ function NewGuidePage() {
   );
 }
 
-export default NewGuidePage;
+export default NewReptileGuidePage;

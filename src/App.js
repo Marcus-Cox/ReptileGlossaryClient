@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 
 import AllGuidesPage from "./pages/AllGuides";
 import FavoriteGuidesPage from "./pages/FavoriteGuides";
-import NewGuidePage from "./pages/NewGuide";
+import NewReptileGuidePage from "./pages/NewReptileGuidePage";
 import Layout from "./components/layout/Layout";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
             <Route exact path="/" element={<AllGuidesPage />}>
             </Route>
 
-            <Route exact path="/new-guide" element={<NewGuidePage />}>
+            <Route exact path="/new-reptile-guide" element={<NewReptileGuidePage />}>
               
             </Route>
 
