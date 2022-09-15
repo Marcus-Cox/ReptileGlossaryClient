@@ -13,7 +13,13 @@ function MainNavigation() {
             <Link to="/">All Guides</Link>
           </li>
           <li>
-            <Link to="/new-guide">New Guides</Link>
+            <Link to="/new-reptile-guide">New Reptile Guides</Link>
+          </li>
+          <li>
+            <Link to="/new-specialneedsreptile-guide">New Special Needs Reptile Guides</Link>
+          </li>
+          <li>
+            <Link to="/new-reptilediet-guide">New Reptile Diet Guides</Link>
           </li>
           <li>
             <Link to="favorite-guides">Favorite Guides</Link>
