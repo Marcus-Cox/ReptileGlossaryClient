@@ -8,7 +8,7 @@ import { ReptileGuideCard } from "./ReptileGuideCard.js"
 export const ReptileGuideList = (props) => {
     const [ reptileguides, setReptileGuides ] = useState([])
     const history = useHistory();
-    // eslint-disable-next-line
+    
     const {reptileguideId} = useParams();
 
     useEffect(() => {
