@@ -8,15 +8,18 @@ export const ReptileGuideCard = ({ reptileguide, delReptileGuide }) => {
 
   return (
     <section key={`reptileguide--${reptileguide.id}`} className="reptileguide">
-      <div className="reptileguide__title">{reptileguide.title}</div>
+      
+      <img className="reptileguide__image" src={reptileguide.image} />
 
+      <div className="reptileguide__title">Title: {reptileguide.title}</div>
+      
       <div className="reptileguide__description">
+        
         {reptileguide.description}
       </div>
 
-      <div className="reptileguide__image">{reptileguide.image}</div>
-
       <div className="reptileguide__content">{reptileguide.content}</div>
+
       <div className="buttons">
         <Link to={`reptileguides/${reptileguide.id}/update`}>
           <button className="cardBtn">Edit</button>{" "}

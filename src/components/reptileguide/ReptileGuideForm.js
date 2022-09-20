@@ -75,11 +75,11 @@ export const NewReptileGuideForm = () => {
 
       <fieldset>
         <div className="form-group">
-          <label htmlFor="image">Image URL</label>
+          <label htmlFor="imageurl">Image URL</label>
           <input
             type="text"
             name="url"
-            id="image"
+            id="imageurl"
             required
             className="form-group"
             value={currentReptileGuide.image}
