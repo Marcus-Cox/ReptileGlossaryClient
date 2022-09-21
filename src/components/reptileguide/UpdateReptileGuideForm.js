@@ -3,7 +3,7 @@ import { useHistory, useParams } from "react-router-dom";
 import {
   updateReptileGuide,
   getReptileGuideById,
-  getReptiles,
+  // getReptiles,
 } from "./ReptileGuideManager";
 import "./ReptileGuideForm.css";
 
@@ -16,15 +16,15 @@ export const UpdateGameForm = () => {
   //Sets game type dropdown on page load
   const [reptiles, setReptiles] = useState([]);
 
-  const loadReptiles = () => {
-    return getReptiles().then((data) => {
-      setReptiles(data);
-    });
-  };
+  // const loadReptiles = () => {
+  //   return getReptiles().then((data) => {
+  //     setReptiles(data);
+  //   });
+  // };
 
-  useEffect(() => {
-    loadReptiles();
-  }, []);
+  // useEffect(() => {
+  //   loadReptiles();
+  // }, []);
 
   //Sets game to be edited on page load
   const [currentReptileGuide, setReptileGuide] = useState({
@@ -32,7 +32,7 @@ export const UpdateGameForm = () => {
     description: "",
     image: "",
     content: "",
-    reptileId: 0,
+    // reptileId: 0,
   });
 
   const loadReptileGuide = () => {
@@ -40,7 +40,7 @@ export const UpdateGameForm = () => {
       getReptileGuideById(reptileguideId).then((data) => {
         setReptileGuide({
           id: reptileguideId,
-          reptileId: data.reptile.id,
+          // reptileId: data.reptile.id,
           title: data.title,
           description: data.description,
           image: data.image,
@@ -88,7 +88,7 @@ export const UpdateGameForm = () => {
         </div>
       </fieldset>
 
-      <fieldset>
+      {/* <fieldset>
         <div className="form-group">
           <label htmlFor="reptileId">Reptile Type</label>
           <select
@@ -106,7 +106,7 @@ export const UpdateGameForm = () => {
             ))}
           </select>
         </div>
-      </fieldset>
+      </fieldset> */}
 
       <fieldset>
         <div className="form-group">
@@ -163,7 +163,7 @@ export const UpdateGameForm = () => {
           // adjusts code  to snake case to match back end
           const editedReptileGuide = {
             // id: reptilguideId,
-            reptile: parseInt(currentReptileGuide.reptileId),
+            // reptile: parseInt(currentReptileGuide.reptileId),
             title: currentReptileGuide.title,
             description: currentReptileGuide.description,
             image: currentReptileGuide.image,
