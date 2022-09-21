@@ -69,7 +69,7 @@ export const UpdateGameForm = () => {
   return (
     <form className="reptileguideForm">
       <h2 className="reptileguide__title">
-        Update Guide {currentReptileGuide.title}
+        Update Guide
       </h2>
 
       <fieldset>
@@ -176,7 +176,10 @@ export const UpdateGameForm = () => {
           );
         }}
         className="btn btn-primary"
-        id="createBtn">Update</button>
+        id="createBtn"
+      >
+        Update
+      </button>
     </form>
   );
 };
