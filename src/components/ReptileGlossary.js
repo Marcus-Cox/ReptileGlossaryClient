@@ -3,9 +3,9 @@ import { Route, Redirect } from "react-router-dom"
 //import for application views
 import { ApplicationViews } from "./ApplicationViews"
 import { NavBar } from "./nav/NavBar"
-//import for the Login page
+//imports the function used for the Login page
 import { Login } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Login.js"
-//import for the Register Page
+//imports the function used for the Register Page
 import { Register } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Register.js"
 //This is a function. 
 export const ReptileGlossary = () => (
@@ -20,15 +20,16 @@ export const ReptileGlossary = () => (
                         <ApplicationViews />
                     </Route>
                 </>
+                //if there is no valid token, the user is directed to the login page
             } else {
                 return <Redirect to="/login" />
             }
         }} />
-
+        {/* This code provides a path to the login page fro the user */}
         <Route path="/login">
             <Login />
         </Route>
-
+ {/* This code provides a path to the Register page fro the user */}
         <Route path="/register">
             <Register />
         </Route>
