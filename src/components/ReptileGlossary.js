@@ -1,14 +1,19 @@
 import React from "react"
 import { Route, Redirect } from "react-router-dom"
+//import for application views
 import { ApplicationViews } from "./ApplicationViews"
 import { NavBar } from "./nav/NavBar"
+//import for the Login page
 import { Login } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Login.js"
+//import for the Register Page
 import { Register } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Register.js"
-
+//This is a function. 
 export const ReptileGlossary = () => (
     <>
         <Route render={() => {
+            //this checks to see if a valid authentication token is being used
             if (localStorage.getItem("lu_token")) {
+                //if a valid token is being used, the user is taken to the front page
                 return <>
                     <Route>
                         <NavBar />
