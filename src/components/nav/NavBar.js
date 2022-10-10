@@ -1,8 +1,11 @@
 import React from "react";
+
 import { Link, useHistory } from "react-router-dom";
+
 import "./NavBar.css";
 
 export const NavBar = () => {
+
   const history = useHistory();
   return (
     <ul className="navbar">

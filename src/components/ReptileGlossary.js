@@ -1,13 +1,16 @@
+//This imports basic react functionality, I don't know -exactly- what it does but I need it for this app to work
 import React from "react"
+//This import is used to pull in "Route" and "Redirect" components. They are used to give the user navigation functionality in the app
 import { Route, Redirect } from "react-router-dom"
 //import for application views
 import { ApplicationViews } from "./ApplicationViews"
+//This imports the Navbar component. The Navbar components has a link to logout, all Guides and a link to make a now guide
 import { NavBar } from "./nav/NavBar"
-//imports the function used for the Login page
+//imports the component  used for the Login page, this allows a user to log into the app
 import { Login } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Login.js"
-//imports the function used for the Register Page
+//imports the component used for the Register Page, this allows a user to make an account they can use to log in
 import { Register } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Register.js"
-//This is a function. 
+//This is a function, it's named ReptileGlossary 
 export const ReptileGlossary = () => (
     <>
         <Route render={() => {
@@ -25,11 +28,11 @@ export const ReptileGlossary = () => (
                 return <Redirect to="/login" />
             }
         }} />
-        {/* This code provides a path to the login page fro the user */}
+        {/* This code provides a path to the login page for the user */}
         <Route path="/login">
             <Login />
         </Route>
- {/* This code provides a path to the Register page fro the user */}
+ {/* This code provides a path to the Register page for the user */}
         <Route path="/register">
             <Register />
         </Route>
