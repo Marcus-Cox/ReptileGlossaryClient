@@ -1,11 +1,19 @@
+//Imports the react component
 import React from "react";
 
+//the "Link" component is used to send the user to different pages of the website(components)
+// the "useHistory" is a hook. It lets you acces the hsotry instace used by React Router.
+//Using history instance can redirect user to another page.
+//The history instance created by React Router uses a Stack( called “History Stack” ), that stores all the entries the user has visited.
 import { Link, useHistory } from "react-router-dom";
 
+//CSS styling for the nav bar
 import "./NavBar.css";
+//This function is the navigation bar at the top of the webpage
+//it provides links to all guides as well as a link to making a new guide
 
 export const NavBar = () => {
-
+  //this function is used to take the react hook "useHistory" and attach it to methods we can use to redirect the user
   const history = useHistory();
   return (
     <ul className="navbar">
@@ -22,7 +30,11 @@ export const NavBar = () => {
           <button
             className="nav-link fakeLink"
             onClick={() => {
+              //the "remove item" method is used here to remove the users authentication token so they can log out. 
               localStorage.removeItem("lu_token");
+              //the ".push" method pushes a new entry onto the history stack.
+              //having this at the end of this code lets the user successfully log out and redirects them to the login page
+              //they go to the login page because "localStorage.removeItem("lu_token");" removes the token they are used as authentication
               history.push({ pathname: "/" });
             }}
           >
