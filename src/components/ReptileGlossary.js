@@ -10,7 +10,10 @@ import { NavBar } from "./nav/NavBar"
 import { Login } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Login.js"
 //imports the component used for the Register Page, this allows a user to make an account they can use to log in
 import { Register } from "/home/marcus/workspace/reptile-glossary/reptile-glossary-client/reptile-glossary/src/auth/Register.js"
-//This is a function, it's named ReptileGlossary 
+
+//This is a function, it's named ReptileGlossary.
+// function  which allow you to store a piece of code that does a single task inside a defined block
+// then call that code whenever you need it using a single short command
 export const ReptileGlossary = () => (
     <>
         <Route render={() => {
