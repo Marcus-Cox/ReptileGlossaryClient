@@ -29,6 +29,8 @@ export const ReptileGuideList = (props) => {
                 }}
             >Register New Reptile Guide
             </button>
+            {/* The .map() method allows you to iterate over an array and modify its elements using a callback function.
+            The callback function will then be executed on each of the array's elements. */}
             {reptileguides.map(reptileguide => 
                 <ReptileGuideCard
                 key={reptileguide.id}

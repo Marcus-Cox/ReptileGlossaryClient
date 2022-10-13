@@ -1,3 +1,5 @@
+
+
 //Imports the react component
 import React from "react";
 
@@ -13,7 +15,11 @@ import "./NavBar.css";
 //it provides links to all guides as well as a link to making a new guide
 
 export const NavBar = () => {
-  //this function is used to take the react hook "useHistory" and attach it to methods we can use to redirect the user
+
+  //this is variable, it's defined as a constant "const" and is immutable. 
+  //the constant "history" is given the value of "useHistory".
+  //"const history" takes the react hook "useHistory", makes it into shorthand that can then be attached it to methods
+  //for this app, this is done to lets us redirect the user to another page
   const history = useHistory();
   return (
     <ul className="navbar">
